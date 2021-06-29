@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_profile">
+
+    <fragment
+        android:id="@+id/nav_training"
+        android:name="com.nextworkout.ui.exercise.TrainingFragment"
+        tools:layout="@layout/fragment_training" >
+        <action
+            android:id="@+id/action_nav_training_to_nav_exercises"
+            app:destination="@id/nav_exercises" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_progress"
+        android:name="com.nextworkout.ui.progress.ProgressFragment"
+        tools:layout="@layout/fragment_progress" />
+
+    <fragment
+        android:id="@+id/nav_today"
+        android:name="com.nextworkout.ui.today.TodayFragment"
+        tools:layout="@layout/fragment_today" />
+
+    <fragment
+        android:id="@+id/nav_report"
+        android:name="com.nextworkout.ui.report.ReportFragment"
+        tools:layout="@layout/fragment_report" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.nextworkout.ui.profile.ProfileFragment">
+        <action
+            android:id="@+id/action_nav_profile_to_nav_today"
+            app:destination="@id/nav_today" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_exercises"
+        android:name="com.nextworkout.ui.exercise.ExercisesFragment">
+        <action
+            android:id="@+id/action_nav_exercises_to_nav_detail"
+            app:destination="@id/nav_detail_exercise" />
+        <action
+            android:id="@+id/action_nav_exercises_to_nav_training"
+            app:destination="@id/nav_training" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_detail_exercise"
+        android:name="com.nextworkout.ui.exercise.DetailFragment">
+        <action
+            android:id="@+id/action_nav_detail_to_nav_training"
+            app:destination="@id/nav_training" />
+    </fragment>
+
+</navigation>

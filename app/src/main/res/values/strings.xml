@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Next WorkOut</string>
+    <string name="exercise_layout">Программа тренировок</string>
+    <string name="today_layout">План на сегодня</string>
+    <string name="today_label">На сегодня у Вас запланировано:</string>
+    <string name="report_layout">Отчет</string>
+    <string name="progress_layout">Профиль</string>
+    <string name="Name">Имя</string>
+    <string name="CreateProfile">Создайте профиль</string>
+    <string name="Height">Рост</string>
+    <string name="Age">Возраст</string>
+    <string name="Weight">Вес</string>
+    <string name="Add">ADD</string>
+    <string name="time">Время начала тренировки:</string>
+    <string-array name="weekdays">
+        <item>В понедельник:</item>
+        <item>Во вторник:</item>
+        <item>В стреду:</item>
+        <item>В четверг:</item>
+        <item>В пятницу:</item>
+        <item>В субботу:</item>
+        <item>В воскресенье:</item>
+    </string-array>
+    <string-array name="range">
+        <item>30 дней</item>
+        <item>90 дней</item>
+        <item>180 дней</item>
+    </string-array>
+</resources>
